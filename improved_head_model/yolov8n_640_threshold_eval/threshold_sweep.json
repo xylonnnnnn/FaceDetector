@@ -1,0 +1,122 @@
+[
+  {
+    "threshold": 0.25,
+    "tp": 10838,
+    "fp": 2267,
+    "fn": 1326,
+    "precision": 0.8270125906142693,
+    "recall": 0.8909898059848734,
+    "f1": 0.8578099647789782,
+    "predictions": 13105,
+    "images_with_fp": 1029,
+    "background_images_with_fp": 12
+  },
+  {
+    "threshold": 0.3,
+    "tp": 10709,
+    "fp": 1765,
+    "fn": 1455,
+    "precision": 0.8585056918390251,
+    "recall": 0.8803847418612298,
+    "f1": 0.8693075736666936,
+    "predictions": 12474,
+    "images_with_fp": 900,
+    "background_images_with_fp": 12
+  },
+  {
+    "threshold": 0.35,
+    "tp": 10561,
+    "fp": 1419,
+    "fn": 1603,
+    "precision": 0.8815525876460768,
+    "recall": 0.8682176915488327,
+    "f1": 0.8748343273691187,
+    "predictions": 11980,
+    "images_with_fp": 796,
+    "background_images_with_fp": 10
+  },
+  {
+    "threshold": 0.4,
+    "tp": 10388,
+    "fp": 1117,
+    "fn": 1776,
+    "precision": 0.9029117774880486,
+    "recall": 0.8539953962512331,
+    "f1": 0.8777726139676371,
+    "predictions": 11505,
+    "images_with_fp": 683,
+    "background_images_with_fp": 9
+  },
+  {
+    "threshold": 0.45,
+    "tp": 10185,
+    "fp": 880,
+    "fn": 1979,
+    "precision": 0.9204699502937189,
+    "recall": 0.837306806971391,
+    "f1": 0.8769210900167894,
+    "predictions": 11065,
+    "images_with_fp": 578,
+    "background_images_with_fp": 8
+  },
+  {
+    "threshold": 0.5,
+    "tp": 9946,
+    "fp": 689,
+    "fn": 2218,
+    "precision": 0.9352139163140574,
+    "recall": 0.8176586649128577,
+    "f1": 0.8724944076494584,
+    "predictions": 10635,
+    "images_with_fp": 475,
+    "background_images_with_fp": 7
+  },
+  {
+    "threshold": 0.55,
+    "tp": 9673,
+    "fp": 536,
+    "fn": 2491,
+    "precision": 0.9474973062983642,
+    "recall": 0.7952153896744492,
+    "f1": 0.8647029902114156,
+    "predictions": 10209,
+    "images_with_fp": 389,
+    "background_images_with_fp": 7
+  },
+  {
+    "threshold": 0.6,
+    "tp": 9328,
+    "fp": 393,
+    "fn": 2836,
+    "precision": 0.9595720604876041,
+    "recall": 0.7668530088786584,
+    "f1": 0.8524560201050949,
+    "predictions": 9721,
+    "images_with_fp": 302,
+    "background_images_with_fp": 7
+  },
+  {
+    "threshold": 0.65,
+    "tp": 8866,
+    "fp": 264,
+    "fn": 3298,
+    "precision": 0.9710843373493976,
+    "recall": 0.728872081552121,
+    "f1": 0.8327228327228327,
+    "predictions": 9130,
+    "images_with_fp": 211,
+    "background_images_with_fp": 5
+  },
+  {
+    "threshold": 0.7,
+    "tp": 8269,
+    "fp": 174,
+    "fn": 3895,
+    "precision": 0.9793912116546252,
+    "recall": 0.6797928313054916,
+    "f1": 0.8025428252535547,
+    "predictions": 8443,
+    "images_with_fp": 142,
+    "background_images_with_fp": 3
+  }
+]

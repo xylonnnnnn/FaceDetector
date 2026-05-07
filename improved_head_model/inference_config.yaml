@@ -1,0 +1,69 @@
+model:
+  task: detect
+  class_count: 1
+  names:
+    0: head
+
+artifacts:
+  pytorch: head_yolov8s_960_best.pt
+  onnx: head_yolov8s_960_best.onnx
+  rknn: head_yolov8s_960_best.rknn
+  onnx_balanced_640: head_yolov8s_640_fast.onnx
+  onnx_fast_384: head_yolov8s_384_fast.onnx
+  onnx_realtime_320: head_yolov8s_320_fast.onnx
+  pytorch_realtime_640: head_yolov8n_640_realtime.pt
+  onnx_realtime_640: head_yolov8n_640_realtime.onnx
+
+runtime:
+  image_size: 960
+  confidence_threshold_balanced: 0.40
+  confidence_threshold_precision: 0.45
+  nms_iou_threshold: 0.70
+  evaluation_iou_threshold: 0.50
+  profiles:
+    quality:
+      model: head_yolov8s_960_best.onnx
+      image_size: 960
+      confidence_threshold: 0.40
+    balanced:
+      model: head_yolov8s_640_fast.onnx
+      image_size: 640
+      confidence_threshold: 0.45
+    fast:
+      model: head_yolov8s_384_fast.onnx
+      image_size: 384
+      confidence_threshold: 0.55
+    realtime:
+      model: head_yolov8n_640_realtime.onnx
+      image_size: 640
+      confidence_threshold: 0.40
+    ultrafast:
+      model: head_yolov8s_320_fast.onnx
+      image_size: 320
+      confidence_threshold: 0.60
+
+training:
+  base_model: yolov8s.pt
+  data: experiments/configs/head_compact_plus_full_subset.yaml
+  train_images: 12116
+  train_head_objects: 58685
+  hard_negative_extra_images: 2337
+  high_resolution_extra_images: 587
+  high_resolution_extra_head_objects: 12090
+  validation_images: 2299
+  validation_head_objects: 12164
+  image_size: 960
+  epochs_completed: 40
+  fine_tune_epochs_from_epoch22: 18
+  device: Tesla V100-SXM2-32GB
+
+evaluation:
+  split: compact validation copy of data/images/test
+  images: 2299
+  head_objects: 12164
+  recommended_confidence_threshold: 0.40
+
+hashes_sha256:
+  head_yolov8s_960_best.pt: 197f7c088d412e6a91800fbe8273352c0c1b385cf8ad48ef7dc97fd97bba6504
+  head_yolov8s_960_best.onnx: f2fbd478c7250e01e8722e6c7f87e14f80d163b59788b9e44566e4b4538a7f7a
+  head_yolov8s_960_best.rknn: 99245144807e4dc702ea67f2eb36d13d9afb29d1c06a99405b27ed5e15d9e248
