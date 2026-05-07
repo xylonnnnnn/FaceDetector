@@ -18,7 +18,6 @@ The default quality model is trained for `imgsz=960` and can be run on CPU, CUDA
 | `improved_head_model/head_yolov8n_640_realtime.onnx` | Realtime camera profile |
 | `improved_head_model/inference_config.yaml` | Runtime thresholds, hashes, training metadata |
 | `improved_head_model/REPORT.md` | Model metrics and training report |
-| `examples/faces_4_14_0029.png` | Small image for smoke testing |
 | `tools/benchmark_detector.py` | Local FPS benchmark |
 | `tools/convert_head_onnx_to_rknn.py` | Optional ONNX -> RKNN converter |
 | `requirements.txt` | Minimal Python dependencies |
